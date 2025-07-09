@@ -1,12 +1,12 @@
-# ⏱️ PyChronos
+# PyChronos
 
-**PyChronos** is a minimalist timer desktop app built with PyQt5. It visually and audibly guides your workflow with dynamic colors and beeps based on the current time. The app follows a fixed cycle:
+**PyChronos** is a minimalist timer desktop app built with PyQt5. It guides your workflow with dynamic colors and beeps based on the current time. The app follows a fixed cycle:
 
 - **IN_PROGRESS (00:00 to 40:00)** – Work phase (Blue background, startup beep)
 - **LAST_MINUTES (40:01 to 49:59)** – Final minutes of work (Red background)
 - **BREAK (50:00 to 59:59)** – Break time (Green background, break beep)
 
-## 🔧 Features
+## Features
 
 - Fixed-size floating window (always on top)
 - Large digital timer display
@@ -15,7 +15,7 @@
 - Draggable interface
 - Frameless window for distraction-free workflow
 
-## 🧠 Logic Summary
+## Logic Summary
 
 The app divides each hour into two zones:
 
@@ -29,7 +29,7 @@ Each second, the UI checks the current system time and:
 - Plays a **startup beep** at the beginning of the IN_PROGRESS phase
 - Plays a **break beep** when transitioning to BREAK
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 git clone https://github.com/yourusername/chronos.git
