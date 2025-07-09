@@ -1,0 +1,16 @@
+[project]
+name = "PyChronos"
+version = "1.0.0"
+description = "A minimalist Pomodoro-style timer built with PyQt5."
+authors = [
+    { name = "Brayan Bedritchuk", email = "brayan.bedritchuk@gmail.com" }
+]
+dependencies = [
+    "PyQt5",
+    "playsound"
+]
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["pychronos"]
+package-dir = { "" = "src" }
