@@ -76,9 +76,7 @@ class ChronosWindow(QWidget):
         minutes, seconds = calculate_timer(now)
         status = get_status(now)
 
-        if self.last_status is None:
-            play_beep_started()
-        if status != self.last_status and self.last_status is None:
+        if status != self.last_status and self.last_status is not None:
             if status == IN_PROGRESS:
                 play_beep_started()
             elif status == BREAK:
