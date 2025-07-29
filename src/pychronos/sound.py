@@ -6,8 +6,12 @@ sound_enabled = True
 
 
 def resource_path(relative_path: str) -> str:
-    base_path = getattr(sys, '_MEIPASS', os.path.abspath(os.path.join(os.path.dirname(__file__), "resources")))
-    return os.path.join(base_path, relative_path)
+    base_path = getattr(
+        sys,
+        "_MEIPASS",
+        os.path.abspath(os.path.dirname(__file__)),
+    )
+    return os.path.join(base_path, "resources", relative_path)
 
 BEEP_STARTED_PATH = resource_path("beep_started.wav")
 BEEP_FINISHED_PATH = resource_path("beep_finished.wav")
